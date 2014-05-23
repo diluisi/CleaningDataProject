@@ -2,14 +2,14 @@
 ========
 ### Recognizing Human Activity from Smartphones Dataset 
 ----
-### Repository Contents
+### Repository Description
 ----
 
 File | Description
 ----|----
 run_analysis.R | A script that takes the UCI HAR dataset and returns the averages for each subject/activity combination across a subset of the original variables
-readme.md | Pseudocode/instructions for *run_analysis.R
-CodeBook.md | Description of the tidy data set, it's source, all included variables, and variable renaming standards
+readme.md | Pseudocode/instructions for *run_analysis.R*
+CodeBook.md | Description of the tidy data set, its source, all included variables, and variable renaming standards
 tidyData.txt | A comma-separated text file containing the data frame created by *run_analysis.R*
 
 All operations were conducted using R v3.1.0 in RStudio v0.98.507
