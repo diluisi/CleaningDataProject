@@ -13,12 +13,16 @@ The means and standard deviations of these variables have averaged for each subj
 For more technical information on sampling and filtering or to obtain original dataset, please visit this [UCI Machine Learning Repository][id]
 
 ### Tidying Variable Names
-____
+----
 Variables were converted to be all lowercase and free of special characters as per the naming standards discussed in Week 4 lecture, *Editing Text Variables*. This was done via the use of *tolower()* and *gsub()*
 
 To make the variables more human readable, the leading *t* and *f* in each variable was replaced with *time* and *freq*. The remainder of the original variable name elements were left untouched as they were already understandly and would like be quite unwieldy if further expanded. This was done using *sub()*
 
 The apparently accidental inclusion of the string *bodybody* in some variables was replaced with *body* using *gsub()*
+
+### Variable Subset Selection
+----
+Variables containing *mean()* and *std()* were selected as these appeared to be the variables where the mean and standard deviation were actually calculated based on a series of measurements of the associated basic variable. Variable containing only *mean* were excluded as this did not appear to be the case AND they had no associated standard deviation measure.
 
 ### Activity Names
 ----
