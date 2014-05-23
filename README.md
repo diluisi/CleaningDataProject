@@ -23,23 +23,13 @@ All operations were conducted using R v3.1.0 in RStudio v0.98.507
 5. Execute *output <- run_analysis()*
 6. When complete, the tidy dataset will be returned in the variable *output*.
 
-
-
-### Tidying Variable Names
-____
-Variables were converted to be all lowercase and free of special characters as per the naming standards discussed in Week 4 lecture, *Editing Text Variables*. This was done via the use of *tolower()* and *gsub()*
-
-To make the variables more human readable, the leading *t* and *f* in each variable was replaced with *time* and *freq*. The remainder of the original variable name elements were left untouched as they were already understandly and would like be quite unwieldy if further expanded. This was done using *sub()*
-
-The apparently accidental inclusion of the string *bodybody* in some variables was replaced with *body* using *gsub()*
-
 ### Basic Description of Code Procedure
 ____
 1. Loads the required library and the all of the UCI HAR data files required to generate the tidy data set using *read.table()* provided they have been unzipped into the working directory and still have their original directory heirarchy.
 2. Identifies column indices of variables containing *mean()* or *std()*.
-3. Removes column labels with non-matching names and tidies variable and activity names as described in *Tidying Variable Names* section.
+3. Removes column labels with non-matching names and tidies variable and activity names as described in *Tidying Variable Names* section of the CodeBook.
 4. Appends the *subject* and *activity* variable labels to the beginning of the column name vector.
-5. Removes data that corresponds to the non-matching labels removed in step 3.
+5. Removes data that corresponds to the non-matching column labels removed in step 3.
 6. Adds the *subject* and *activity* data to the corresponding *test* or *train* data frames.
 7. Applies the tidy column names to the *test* and *train* data frames.
 8. Row binds the completed *test* and *train* data frames together and then orders them by *subject* then *activity*.
