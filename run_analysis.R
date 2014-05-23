@@ -29,7 +29,10 @@ run_analysis <- function()
     variable_labels <- as.character(variable_labels[target_variables, 2])
     variable_labels <- tolower(variable_labels)
     variable_labels <- gsub("[(),-]","",variable_labels)
-
+    variable_labels <- gsub("bodybody", "body", variable_labels)
+    variable_labels <- sub("t", "time", variable_labels)
+    variable_labels <- sub("f", "freq", variable_labels)
+    
     ##Add labels for "subject" and "activity" to the beginning of the column labels
     variable_labels <- append(variable_labels, c("subject", "activity"), 0)
 
