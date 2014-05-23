@@ -27,105 +27,89 @@ laying | Subject lay down
 ## Variable Names
 Variable Name | Description
 ----|----
-tbodyaccmeanx |
-tbodyaccmeany | Mean body acceleration on the x,y,z axes
-tbodyaccmeanz |
+timebodyaccmeanx |
+timebodyaccmeany | Mean body acceleration on the x,y,z axes
+timebodyaccmeanz |
  | 
- | 
-tbodyaccstdx |
-tbodyaccstdy | Standard deviation of body acceleration on the x,y,z axes
-tbodyaccstdz |
+timebodyaccstdx |
+timebodyaccstdy | Standard deviation of body acceleration on the x,y,z axes
+timebodyaccstdz |
+  |
+timegravityaccmeanx |
+timegravityaccmeany | Mean gravity acceleration on the x,y,z axes
+timegravityaccmeanz |
+  |
+timegravityaccstdx |
+timegravityaccstdy | Standard deviation of gravity acceleration on the x,y,z axes
+timegravityaccstdz |
+  |
+timebodyaccjerkmeanx |
+timebodyaccjerkmeany | Mean of the body acceleration jerk signal on the x,y,z axes
+timebodyaccjerkmeanz | 
+  |
+timebodyaccjerkstdx |
+timebodyaccjerkstdy | Standard deviation of the body acceleration jerk signal on the x,y,z axes
+timebodyaccjerkstdz |
+  |
+timebodygyromeanx |
+timebodygyromeany | Mean body angular velocity on the x,y,z axes
+timebodygyromeanz |
+  |
+timebodygyrostdx |
+timebodygyrostdy | Standard deviation of the body angular velocity on the x,y,z axes
+timebodygyrostdz |
+  |
+timebodygyrojerkmeanx |
+timebodygyrojerkmeany | Mean body angular velocity jerk signal on x,y,z axes
+timebodygyrojerkmeanz |
+  |
+timebodygyrojerkstdx |
+timebodygyrojerkstdy | Standard deviation of body angular velocity on x,y,z axes
+timebodygyrojerkstdz |
+  |
+timebodyaccmagmean |   Mean body acceleration magnitude
+timebodyaccmagstd | Standard deviation of body acceleration magnitude
+timegravityaccmagmean | Mean gravity acceleration magnitude
+timegravityaccmagstd | Standard deviation of gravity acceleration magnitude
+timebodyaccjerkmagmean | Mean body acceleration jerk signal magnitude
+timebodyaccjerkmagstd | Standard deviation of body acceleration jerk signal magnitude
+timebodygyromagmean | Mean body angular velocity magnitude
+timebodygyromagstd | Standard deviation of angular velocity magnitude
+timebodygyrojerkmagmean | Mean body angular velocity jerk signal magnitude
+timebodygyrojerkmagstd | Standard deviation of angular velocity jerk signal magnitude
+  |
+freqbodyaccmeanx |
+freqbodyaccmeany | Mean FFT of body acceleration on x,y,z axes
+freqbodyaccmeanz |
   |  
+freqbodyaccstdx |
+freqbodyaccstdy | FFT standard deviation of body acceleration on x,y,z axes
+freqbodyaccstdz |
   |
-tgravityaccmeanx |
-tgravityaccmeany | Mean gravity acceleration on the x,y,z axes
-tgravityaccmeanz |
-  |  
+freqbodyaccjerkmeanx |
+freqbodyaccjerkmeany | Mean FFT of body acceleration jerk signal on x,y,z axes
+freqbodyaccjerkmeanz |
   |
-tgravityaccstdx |
-tgravityaccstdy | Standard deviation of gravity acceleration on the x,y,z axes
-tgravityaccstdz |
+freqbodyaccjerkstdx |
+freqbodyaccjerkstdy | FFT standard deviation of body acceleration jerk signal on x,y,z axes
+freqbodyaccjerkstdz |
   |
+freqbodygyromeanx | 
+freqbodygyromeany | Mean FFT of body angular velocity on x,y,z axes
+freqbodygyromeanz |
   |
-tbodyaccjerkmeanx |
-tbodyaccjerkmeany | Mean of the body acceleration jerk signal on the x,y,z axes
-tbodyaccjerkmeanz | 
+freqbodygyrostdx |
+freqbodygyrostdy |	FFT standard deviation of body angular velocity on x,y,z axes
+freqbodygyrostdz |
   |
-  |
-tbodyaccjerkstdx |
-tbodyaccjerkstdy | Standard deviation of the body acceleration jerk signal on the x,y,z axes
-tbodyaccjerkstdz |
-  |  
-  |
-tbodygyromeanx |
-tbodygyromeany | Mean body angular velocity on the x,y,z axes
-tbodygyromeanz |
-  |
-  |
-tbodygyrostdx |
-tbodygyrostdy | Standard deviation of the body angular velocity on the x,y,z axes
-tbodygyrostdz |
-  |
-  |
-tbodygyrojerkmeanx |
-tbodygyrojerkmeany | Mean body angular velocity jerk signal on x,y,z axes
-tbodygyrojerkmeanz |
-  |
-  |
-tbodygyrojerkstdx |
-tbodygyrojerkstdy | Standard deviation of body angular velocity on x,y,z axes
-tbodygyrojerkstdz |
-  |
-  |
-tbodyaccmagmean |   Mean body acceleration magnitude
-tbodyaccmagstd | Standard deviation of body acceleration magnitude
-tgravityaccmagmean | Mean gravity acceleration magnitude
-tgravityaccmagstd | Standard deviation of gravity acceleration magnitude
-tbodyaccjerkmagmean | Mean body acceleration jerk signal magnitude
-tbodyaccjerkmagstd | Standard deviation of body acceleration jerk signal magnitude
-tbodygyromagmean | Mean body angular velocity magnitude
-tbodygyromagstd | Standard deviation of angular velocity magnitude
-tbodygyrojerkmagmean | Mean body angular velocity jerk signal magnitude
-tbodygyrojerkmagstd | Standard deviation of angular velocity jerk signal magnitude
-  |  
-  |
-fbodyaccmeanx |
-fbodyaccmeany | Mean FFT of body acceleration on x,y,z axes
-fbodyaccmeanz |
-  |  
-fbodyaccstdx |
-fbodyaccstdy | FFT standard deviation of body acceleration on x,y,z axes
-fbodyaccstdz |
-  |
-  |
-fbodyaccjerkmeanx |
-fbodyaccjerkmeany | Mean FFT of body acceleration jerk signal on x,y,z axes
-fbodyaccjerkmeanz |
-  |
-  |
-fbodyaccjerkstdx |
-fbodyaccjerkstdy | FFT standard deviation of body acceleration jerk signal on x,y,z axes
-fbodyaccjerkstdz |
-  |
-  |
-fbodygyromeanx | 
-fbodygyromeany | Mean FFT of body angular velocity on x,y,z axes
-fbodygyromeanz |
-  |
-  |
-fbodygyrostdx |
-fbodygyrostdy |	FFT standard deviation of body angular velocity on x,y,z axes
-fbodygyrostdz |
-  |
-  |
-fbodyaccmagmean | Mean FFT of body acceleration magnitude
-fbodyaccmagstd | FFT standard deviation of body accleration magnitude
-fbodybodyaccjerkmagmean | Mean FFT of body acceleration jerk signal magnitude
-fbodybodyaccjerkmagstd | FFT standard deviation of body acceleration jerk signal magnitude
-fbodybodygyromagmean | Mean FFT of body angular velocity magnitude
-fbodybodygyromagstd | FFT standard deviation of body angular velocity magnitude
-fbodybodygyrojerkmagmean | Mean FFT of body angular velocity jerk signal magnitude
-fbodybodygyrojerkmagstd | FFT standard deviation of body angular velocity jerk signal magnitude
+freqbodyaccmagmean | Mean FFT of body acceleration magnitude
+freqbodyaccmagstd | FFT standard deviation of body accleration magnitude
+freqbodyaccjerkmagmean | Mean FFT of body acceleration jerk signal magnitude
+freqbodyaccjerkmagstd | FFT standard deviation of body acceleration jerk signal magnitude
+freqbodygyromagmean | Mean FFT of body angular velocity magnitude
+freqbodygyromagstd | FFT standard deviation of body angular velocity magnitude
+freqbodygyrojerkmagmean | Mean FFT of body angular velocity jerk signal magnitude
+freqbodygyrojerkmagstd | FFT standard deviation of body angular velocity jerk signal magnitude
 
 ## License
 ----
